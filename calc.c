@@ -33,11 +33,31 @@ for(i = 0;i < 5;i++)
  }
  */
 
+float soma(float a,float b)
+{
+    return a+b;
+}
+
+float subtracao(float a,float b)
+{
+    return a-b;
+}
+
+float multiplicacao(float a,float b)
+{
+    return a*b;
+}
+
+float divisao(float a,float b)
+{
+    return a/b;
+}
+
 int main()
 {
 
     //função de soma
-    float a = 0.0,b = 0.0,c = 0.0;
+    float a = 0.0,b = 0.0;
     int opc;
 
     do{
@@ -50,8 +70,8 @@ int main()
             printf("Digite um valor: ");
             scanf("%f",&b);
 
-            c=a+b;
-            printf("Resultado %.2f",c);
+            
+            printf("Resultado %.2f",soma(a,b));
         }
 
         else if(opc==2){
@@ -60,9 +80,8 @@ int main()
 
             printf("Digite um valor: ");
             scanf("%f",&b);
-
-            c=a-b;
-            printf("Resultado %.2f",c);
+            
+            printf("Resultado %.2f",subtracao(a,b));
         }
         else if(opc==3){
             printf("Digite um valor: ");
@@ -70,9 +89,8 @@ int main()
 
             printf("Digite um valor: ");
             scanf("%f",&b);
-
-            c=a*b;
-            printf("Resultado %.2f",c);
+            
+            printf("Resultado %.2f",multiplicacao(a,b));
         }
         else if(opc==4){
             printf("Digite um valor: ");
@@ -80,9 +98,8 @@ int main()
 
             printf("Digite um valor: ");
             scanf("%f",&b);
-
-            c=a/b;
-            printf("Resultado %.2f",c);
+            
+            printf("Resultado %.2f",divisao(a,b));
         }
         else {
             printf("opcao invalida\n");
